@@ -1,8 +1,10 @@
 # Facial-recognition
-This was capstone project and one of my research paper where facial recognition was done through parts of faces like nose,mouth and eyes.The main focus of project was to detect face of person even if partial face is visible.If face is damaged in accident,if face was recorded by webcam,if face is masked or any other reason to recognize face this model is used.
+This capstone project and research paper focused on developing a facial recognition system that could accurately identify individuals even when only partial facial features, such as the nose, mouth, and eyes, were available. The primary objective was to overcome challenges faced in scenarios where the face was damaged due to accidents, captured by webcams, masked, or in any other situation where traditional face recognition methods might struggle.
 
-3 model were built where face is cropped by eyes,nose,mouth and seperately recognized according to parts.Face landmark detection is used to locate part of face.After that cropping out filtering and modifications are done on this part.Then face reccognition done using these parts.
+To achieve this, three distinct models were created, each specializing in recognizing specific facial parts. The process began with face landmark detection, which accurately located the key points of the face. Subsequently, the face was cropped around the eyes, nose, and mouth regions, and specific filters and modifications were applied to enhance the extracted facial parts.
 
-Haar cascade model is used for onbject detection.Face landmark points locating parts of body then using convolution neural network with droup to do face recognition gives output result 0 or 1 for faces to be similar or not respectively.
+For the actual face recognition task, a convolutional neural network (CNN) with dropout regularization was employed. The Haar cascade model, known for its effectiveness in object detection, was utilized to locate the face in the image. The face landmark points provided the necessary guidance to separate and isolate the specific parts of the face. The CNN model was then trained on these facial parts to perform face recognition. The output of the model was a binary result, indicating whether the input faces were deemed similar or dissimilar.
+
+Overall, this project aimed to address the challenges associated with partial face recognition by leveraging face landmark detection, region cropping, and a specialized CNN model. The combination of these techniques and models contributed to a robust facial recognition system capable of accurately identifying individuals, even when only specific parts of the face were visible.
 
 Download any celebrity dataset
